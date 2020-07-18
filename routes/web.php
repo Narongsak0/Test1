@@ -13,6 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get("/showdetail/{name}/{age}/{At}", function ($name,$age,$At) {
+//     return "สวัสดี $name คุณมีอายุ $age ปี และคุณพูดว่า $At";
+// });
+
+// Route::get('/', 'HomeController@index');
+// Route::get('/greeting/{name}', 'HomeController@greeting');
+
+// Route::get("/บวกเลข/{num1}/{num2}/{num3}", 'HomeController@calculate');
+
+Route::get('/user', 'UserController@index');
+Route::get('/user/show/{id}', 'UserController@show');
+Route::get('/user/update/{id}', 'UserController@update');
