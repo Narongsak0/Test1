@@ -29,3 +29,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/user', 'UserController@index');
 Route::get('/user/show/{id}', 'UserController@show');
 Route::get('/user/update/{id}', 'UserController@update');
+
+Route::get('/todo', 'TodController@index');
+Route::get('/todo/show/{id}', 'TodController@show');
+Route::get('/todo/delete/{id}', 'TodController@delete');

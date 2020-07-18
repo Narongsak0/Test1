@@ -6,13 +6,16 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return "สวัสดีจากหน้า User index";
-}
-    public function show($id){
+    }
+    public function show($id)
+    {
         return "เธอคือ $id";
     }
-    public function update($id){
+    public function update($id)
+    {
         return "กำลัง update id $id";
     }
 }
